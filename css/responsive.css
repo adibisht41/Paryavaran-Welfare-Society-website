@@ -10,6 +10,8 @@
 	}
 	#home .hide5{display:none;}
 	.hide6{display:none;}
+	#dept .show30{display:none;}
+	#dept .hide30{display:block;}
 }
 
 /* xs */
@@ -131,6 +133,8 @@
 	.contact-info {
 		padding-left: 0;
 	}
+	#dept .hide30{display:none;}
+	#dept .show30{display:block;}
 	#footer .footer-bottom {
 		text-align: center;
 	}

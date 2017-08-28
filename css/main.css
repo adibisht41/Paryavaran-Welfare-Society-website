@@ -1,7 +1,5 @@
 /*******CSS Document********/
-/*************************
-*******Typography******
-**************************/
+/*******Theme credits Oxygen theme, especially #portfolio******/
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -563,7 +561,7 @@ display:none;
 *********Events*********
 **************************/
 #portfolio {
-background:url(../images/paryav3-zn.png) no-repeat center center fixed; 
+background:url(../images/paryav3-n-bx.png) no-repeat center center fixed; 
 display: table;
 height: 100%;
 position: relative;
@@ -743,8 +741,8 @@ background-size: cover;
 **************************/
 #dept
 {
- /*background:url(../images/aboutus.jpeg)center;*/
- 
+ background:url(../images/world_map.gif);
+ background-size:cover;
  
  width:100%;
  
@@ -758,6 +756,8 @@ background-size: cover;
 #dept .icon-dept h3 a{font-size:15px;color:#007700;}
 #dept .dept-col1{background:url(../images/Tree Plantation Drives/IMG_4122.jpg);}
 hr{height:2px;background-color:#00AA00;width:90%;}
+
+#dept a:hover{color:#EE0000;}
 /*************************
 *********Blog gallery******
 **************************/
@@ -821,7 +821,7 @@ hr{height:2px;background-color:#00AA00;width:90%;}
 *********Team CSS*********
 **************************/
 #team {
-background:url(../images/paryav1trans-xc.png) no-repeat center center fixed; 
+background:url(../images/paryav1trans-xc-bx.png) no-repeat center center fixed; 
 display: table;
 height: 100%;
 position: relative;
@@ -840,7 +840,10 @@ background-size: cover;
   font-size: 18px;
 }
 #team img {
-  width:150px;height:150px;border-radius:50%;border:2px solid white;
+  width:150px;
+  height:150px;
+  border:3px solid white;
+  border-radius:3%;
 }
 
 .member-info h3 {
@@ -1008,7 +1011,7 @@ ul.address {
 }
 
 #footer h4{color:#008800;font-weight:400;}
-#footer li a{color:#DDDDDD;}
+#footer li a{color:#DDDDDD;font-weight:100;}
 #footer li a:hover{color:#fff;}
 #footer hr{background-color:#fff;width:97%;height:0.8px;}
 
@@ -1082,3 +1085,63 @@ Arrow Bounce
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
 }
+
+.container11 {
+  position: relative;
+  width: 50%;
+}
+
+.image11 {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #bbbbbb;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.overlay11 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color:#008CBA;
+  opacity:1;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container11:hover .overlay11 {
+  width: 100%;
+}
+
+.text11 {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.bottomleft {
+    position: absolute;
+    bottom: 8px;
+    left: 22px;
+    font-size: 18px;
+	color:#fff;
+}
+.topleft {
+    position: absolute;
+    top:8px;
+    left: 16px;
+    font-size: 18px;
+	
+}
+
+
+#dept li a h3:hover{color:#008800;}

@@ -1,18 +1,21 @@
 <?php
-$name       = @trim(stripslashes($_POST['name'])); 
-$from       = @trim(stripslashes($_POST['email'])); 
-$subject    = @trim(stripslashes($_POST['subject'])); 
-$message    = @trim(stripslashes($_POST['message'])); 
-$to   		= 'paryavaran.ws@gmail.com';//replace with your email
+$name       = $_POST['name']; 
+$from       = 'help@paryavaran.ws'; 
+$fromPerson = POST['email'];
+$subject    = $_POST['subject']; 
+$message    = $_POST['message']; 
+$to   		= 'paryavaranws@thapar.edu';
 
-$headers   = array();
-$headers[] = "MIME-Version: 1.0";
-$headers[] = "Content-type: text/plain; charset=iso-8859-1";
-$headers[] = "From: {$name} <{$from}>";
-$headers[] = "Reply-To: <{$from}>";
-$headers[] = "Subject: {$subject}";
-$headers[] = "X-Mailer: PHP/".phpversion();
+$autoMessage = 'Reply to this email at '.$fromPerson.'\n\n';
+$messageToSend = $autoMessage.$message;
 
-mail($to, $subject, $message, $headers);
+$headers = "MIME-Version: 1.0";
+$headers .= "Content-type: text/plain; charset=iso-8859-1";
+$headers .= "From: {$name} <{$from}>";
+$headers .= "Reply-To: <{$fromPerson}>";
+$headers .= "Subject: {$subject}";
+$headers .= "X-Mailer: PHP/".phpversion();
+
+mail($to, $subject, $messageToSend, $headers);
 
 die;

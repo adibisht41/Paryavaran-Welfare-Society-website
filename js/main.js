@@ -24,13 +24,6 @@ jQuery(function($) {
 		return false;
 	});
 
-/*
-	$('#tohash').on('click', function(){
-		$('html, body').animate({
-			scrollTop: $(this.hash).offset().top - 5}, 1000);
-			return false;
-	});
-*/	
 	//Initiat WOW JS
 	new WOW().init();
 
@@ -49,10 +42,6 @@ jQuery(function($) {
 		});
 	});
 
-
-	//new additions
-	
-	
 	// raise pws logo when navbar uncollapse
 	//.logo for index.html && .hide-nav-logo img for image_gallery.html
 	
@@ -96,10 +85,7 @@ function displaceLogo(v1){
 		$('.navbar-brand').addClass('raise-logo-1');
 	}
 }
-	
-	
-	
-	
+		
 	//For youtube video embed
 	
     $(".youtube1").each(function() {
@@ -241,7 +227,7 @@ function displaceLogo(v1){
 });//end of $(function(){});
 
 
-//Team seection
+//Team selection
 function randomMember(max) {
   return Math.floor(Math.random() * max);
 }
